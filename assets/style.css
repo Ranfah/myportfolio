@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.donner_perso{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2px;
+    background: aqua;
+}
+.cote_droite{
+    border: solid 2px black;
+    border-radius: 5px;
+    height: 400px;
+    margin: 10px;
+}
+.cote_gauche{
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 10px;
+}
+.experience_perso{
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 48, 48);
+}
+.portofolio_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid 2px black;
+    height: 200px;
+    margin: 10px;
+}
+.portofolio_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid 2px black;
+    height: 200px;
+    margin: 10px;
+}
+.projet_link_1, .projet_link_3{
+    margin: 5px;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+.projet_link_2, .projet_link_4{
+    margin: 5px;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+.etude_perso{
+    border: solid 2px black;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
