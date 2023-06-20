@@ -5,7 +5,8 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    background: aquamarine;
+    background:#1B263B;
+    color: antiquewhite;
 }
 .donner_perso{
     display: grid;
@@ -13,9 +14,14 @@ body{
     gap: 2px;
 }
 .cote_droite{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
     height: auto;
     padding-top: 200px;
     margin: 20px;
+}
+img{
+    width: 400px;
 }
 .cote_gauche{
     height: auto;
@@ -47,10 +53,12 @@ body{
     flex-direction: row-reverse;
 }
 .experience_perso{
+    margin: 25px;
     height: auto;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background: rgb(255, 48, 48);
+    background: #415A77;
 }
 .portofolio_1{
     display: grid;
@@ -100,7 +108,7 @@ body{
     font-family: 'Playfair Display', serif;
 }
 .text_title_stack{
-    text-align: start;
+    text-align: center;
     font-family:'Playfair Display',serif;
     font-size: x-large;
     padding-left: 10px;
@@ -126,8 +134,12 @@ body{
    display: flex;
    flex-direction: row;
    justify-content: center;
+   padding-top: 25px;
    padding-bottom: 25px;
    
+}
+.github, .linkedIn, .Facebook, .Google{
+   padding: 10px; 
 }
 .title_contact{
     text-align: center;
