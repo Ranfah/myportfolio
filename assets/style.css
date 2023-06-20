@@ -5,26 +5,49 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    background: aquamarine;
 }
 .donner_perso{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2px;
-    background: aqua;
 }
 .cote_droite{
-    border: solid 2px black;
-    border-radius: 5px;
     height: auto;
+    padding-top: 200px;
     margin: 20px;
 }
 .cote_gauche{
-    border: solid 2px black;
-    border-radius: 5px;
+    height: auto;
     margin: 10px;
+    border: solid 1px black;
+}
+.liste_langage{
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.liste_framework{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.liste_outils_base_de_donnee{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.list_outils{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .experience_perso{
+    height: auto;
     display: flex;
     flex-direction: column;
     background: rgb(255, 48, 48);
@@ -35,6 +58,7 @@ body{
     border: solid 2px black;
     height: 200px;
     margin: 10px;
+    height: auto;
 }
 .portofolio_2{
     display: grid;
@@ -42,16 +66,21 @@ body{
     border: solid 2px black;
     height: 200px;
     margin: 10px;
+    height: auto;
 }
 .projet_link_1, .projet_link_3{
     margin: 5px;
     border: solid 2px rgb(0, 0, 0);
     border-radius: 5px;
+    padding: 10px;
+    height: auto;
 }
 .projet_link_2, .projet_link_4{
     margin: 5px;
     border: solid 2px black;
     border-radius: 5px;
+    padding: 10px;
+    height: auto;
 }
 .etude_perso{
     border: solid 2px black;
@@ -74,4 +103,37 @@ body{
     text-align: start;
     font-family:'Playfair Display',serif;
     font-size: x-large;
+    padding-left: 10px;
+}
+
+
+.inter_ligne{
+    height: auto;
+    
+}
+.style_inter_ligne{
+    text-align: center;
+}
+.text_portfolio{
+    height: auto;
+    width: auto;
+    padding: 10px;
+    text-overflow: ellipsis;
+    background: aqua;
+    text-align: center;
+}
+.contacte{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-bottom: 25px;
+   
+}
+.title_contact{
+    text-align: center;
+}
+.style_hr{
+    width: 50%;
+    height: 0.5px;
+    border: dashed 1px black;
 }
