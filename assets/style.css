@@ -14,14 +14,18 @@ body{
     gap: 2px;
 }
 .cote_droite{
-    display: grid;
-    grid-template-columns: 2fr 1fr ;
     height: auto;
-    padding-top: 200px;
     margin: 20px;
 }
 img{
-    width: 400px;
+    position: absolute;
+    width: 500px;
+    padding-top: -250px;
+    left: 10px;
+    z-index:auto;
+}
+.style_text{
+    z-index:399;
 }
 .cote_gauche{
     height: auto;
@@ -101,8 +105,11 @@ img{
     font-family: monospace;
     position: relative;
     font-size: 25px;
+    top: 150px;
 }
 .text_bio{
+    top: 150px;
+    position: relative;
     text-align: end;
     margin-right: 10px;
     font-family: 'Playfair Display', serif;
