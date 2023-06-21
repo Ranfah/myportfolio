@@ -25,12 +25,22 @@ img{
     z-index:auto;
 }
 .style_text{
+    padding-top: 75px;
     z-index:399;
 }
 .cote_gauche{
+    color: white;
     height: auto;
     margin: 10px;
-    border: solid 1px black;
+    background: #415A77;
+    box-shadow: 0px 0px 0.7px 0.7px black;
+    border: none;
+    border-radius: 10px;
+    opacity: 75%;
+}
+.cote_gauche:hover{
+    opacity: 100%;
+    color: white;
 }
 .liste_langage{
     padding: 10px;
@@ -41,6 +51,7 @@ img{
 .liste_framework{
     padding: 10px;
     text-align: center;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
 }
@@ -57,42 +68,53 @@ img{
     flex-direction: row-reverse;
 }
 .experience_perso{
-    margin: 25px;
+    color: black;
+    position: relative;
+    margin: 0px 25px 0px 25px;
     height: auto;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background: #415A77;
 }
 .portofolio_1{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: solid 2px black;
     height: 200px;
     margin: 10px;
     height: auto;
+    
 }
 .portofolio_2{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: solid 2px black;
     height: 200px;
     margin: 10px;
     height: auto;
 }
 .projet_link_1, .projet_link_3{
     margin: 5px;
-    border: solid 2px rgb(0, 0, 0);
+    border:  none;
     border-radius: 5px;
     padding: 10px;
     height: auto;
+    opacity: 50%;
+    background: #415A77;
+    box-shadow: 0px 0px 0.7px 0.7px black;
+}
+.projet_link_1:hover, .projet_link_3:hover, .projet_link_2:hover, .projet_link_4:hover{
+    opacity: 100%;
+    color: blanchedalmond;
 }
 .projet_link_2, .projet_link_4{
     margin: 5px;
-    border: solid 2px black;
+    border: none;
     border-radius: 5px;
     padding: 10px;
     height: auto;
+    opacity: 50%;
+    background: #415A77;
+    box-shadow: 0px 0px 0.7px 0.7px black;
+
 }
 .etude_perso{
     border: solid 2px black;
@@ -105,12 +127,14 @@ img{
     font-family: monospace;
     position: relative;
     font-size: 25px;
-    top: 150px;
+    text-align: end;
+   
 }
 .text_bio{
-    top: 150px;
+    top: 30px;
     position: relative;
     text-align: end;
+    padding-left: 500px;
     margin-right: 10px;
     font-family: 'Playfair Display', serif;
 }
@@ -123,8 +147,7 @@ img{
 
 
 .inter_ligne{
-    height: auto;
-    
+    height: auto;    
 }
 .style_inter_ligne{
     text-align: center;
@@ -134,7 +157,6 @@ img{
     width: auto;
     padding: 10px;
     text-overflow: ellipsis;
-    background: aqua;
     text-align: center;
 }
 .contacte{
@@ -156,3 +178,24 @@ img{
     height: 0.5px;
     border: dashed 1px black;
 }
+.style_image{
+    position: relative;
+    width: 150px;
+    height: 100px;
+}
+.btn_style{
+    color: antiquewhite;
+    position: relative;
+    left: 750px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background:  #415A77;
+    border: none;
+    top: 20px;
+}
+.btn_style:hover{
+    background: none;
+    border: solid 2px #415A77;
+}
+
