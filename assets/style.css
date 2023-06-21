@@ -92,6 +92,7 @@ img{
     height: auto;
 }
 .projet_link_1, .projet_link_3{
+    color: black !important;
     margin: 5px;
     border:  none;
     border-radius: 5px;
@@ -100,10 +101,6 @@ img{
     opacity: 50%;
     background: #415A77;
     box-shadow: 0px 0px 0.7px 0.7px black;
-}
-.projet_link_1:hover, .projet_link_3:hover, .projet_link_2:hover, .projet_link_4:hover{
-    opacity: 100%;
-    color: blanchedalmond;
 }
 .projet_link_2, .projet_link_4{
     margin: 5px;
@@ -115,6 +112,15 @@ img{
     background: #415A77;
     box-shadow: 0px 0px 0.7px 0.7px black;
 
+}
+.style_link{
+    color: black;
+    opacity: 50%;
+    text-decoration: none;
+}
+.style_link:hover, .projet_link_1:hover, .projet_link_2:hover,.projet_link_3:hover,.projet_link_3:hover {
+    opacity: 100%;
+    color: antiquewhite;
 }
 .etude_perso{
     border: solid 2px black;
@@ -186,13 +192,16 @@ img{
 .btn_style{
     color: antiquewhite;
     position: relative;
-    left: 750px;
     width: 100px;
     height: 40px;
     border-radius: 10px;
     background:  #415A77;
     border: none;
-    top: 20px;
+}
+button{
+    position: relative;
+    left: 750px;
+    align-content: end;
 }
 .btn_style:hover{
     background: none;
