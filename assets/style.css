@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,600;1,700&display=swap');
-body{
+::after,::before,body{
+    width: auto;
+    height: auto;
     margin: 0;
+    padding: 0;
     background:linear-gradient(#1B263B 50%,#415A77);
 }
 .container{
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     color: antiquewhite;
+    justify-content: center;
 }
 .donner_perso{
     display: grid;
@@ -29,11 +34,13 @@ img{
     z-index:399;
 }
 .cote_gauche{
+    position: relative;
     color: white;
-    height: auto;
+    width: auto;
+    height: 300px;
     margin: 10px;
     background: #415A77;
-    box-shadow: 0px 0px 0.7px 0.7px black;
+    box-shadow: 0px 0px 0px 0.7px #415A77;
     border: none;
     border-radius: 10px;
     opacity: 75%;
@@ -68,9 +75,9 @@ img{
     flex-direction: row-reverse;
 }
 .experience_perso{
-    color: black;
     position: relative;
-    margin: 0px 100px 0px 100px;
+    color: black;
+    margin: 25px 100px 0px 100px;
     height: auto;
     border-radius: 10px;
     display: flex;
@@ -95,7 +102,6 @@ img{
     height: auto;
 }
 .projet_link_1, .projet_link_3{
-    color: black !important;
     margin: 5px;
     border:  none;
     border-radius: 5px;
@@ -137,7 +143,6 @@ img{
     font-family: monospace;
     position: relative;
     font-size: 25px;
-    padding-left: 500px;
     text-align: end;
    
 }
@@ -159,7 +164,8 @@ img{
 
 
 .inter_ligne{
-    height: auto;    
+    height: auto;
+    width: 50%; 
 }
 .style_inter_ligne{
     position: relative;
@@ -186,11 +192,17 @@ img{
 }
 .title_contact{
     text-align: center;
+    justify-content: center;
+    width: 100%;
 }
 .style_hr{
-    width: 50%;
+    width: 100%;
     height: 0.5px;
     border: dashed 1px black;
+}
+.style_hr.footer{
+    width: 50%;
+    justify-content: center;
 }
 .style_image{
     position: relative;
@@ -206,14 +218,29 @@ img{
     background:  #415A77;
     border: none;
 }
-button{
-    position: relative;
-    align-content: end;
-    margin-top: 25px;
-    margin-left: 510px;
-}
 .btn_style:hover{
     background: none;
-    border: solid 2px #415A77;
+    border: solid 1px white;
+}
+.btn_position{
+    position: relative;
+    margin-top: 40px;
+    justify-content: end;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.btn_style.contact-me{
+    width: 150px;
+    background: none;
+    border: solid 1px white;
+}
+.btn_style.contact-me:hover{
+    width: 150px;
+    border: solid 1px #415A77 ;
+    background:  #415A77;
+}
+span{
+    color: #415A77;
 }
 
